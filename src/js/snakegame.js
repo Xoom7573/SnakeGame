@@ -1,6 +1,7 @@
 import { update as updateSnake, draw as drawSnake, snakeHead, snakeIntersection, SNAKE_SPEED } from './snake.js'
 import { update as updateFood, draw as drawFood} from './food.js'
 import {outsideGrid} from './grid.js'
+import { getInputDirection } from "./input.js";
 
 // ___Variables___
 let lastRenderTime = 0;
@@ -30,7 +31,7 @@ function main (currentTime) {
 window.requestAnimationFrame(main)
 
 function update() {
-    updateSnake();
+    updateSnake(getInputDirection());
     updateFood();
     checkDeath();
 }

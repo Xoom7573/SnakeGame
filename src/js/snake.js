@@ -1,4 +1,3 @@
-import { getInputDirection } from "./input.js";
 
 // ___Export Variables___
 export const SNAKE_SPEED = 5;
@@ -9,11 +8,10 @@ const snakeBody = [
     { x: 11, y: 11}
 ]
 
-export function update() {
+export function update(input) {
 
     addSegments();
 
-    const input = getInputDirection();
     for (let i = snakeBody.length - 2; i >= 0; i--){
         snakeBody[i+1] = { ...snakeBody[i] };
     }
