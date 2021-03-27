@@ -11,7 +11,7 @@
    - 
    
  >Bugs
-   - 
+   - Invisible foods on the map that u can eat! [the food isn't getting rendered!]
 
  >Done
    - Pauzing the game by pressing spacebar!
