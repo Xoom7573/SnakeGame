@@ -38,12 +38,12 @@ body {
     border: .25vmin solid black;
 }
 
-.Normal-Food {
-    background-color: brown;
+.Bad-Food {
+    background-color: green;
     border: .25vmin solid black;
 }
 
-.Normal-Food {
-    background-color: brown;
+.Gold-Food {
+    background-color: gold;
     border: .25vmin solid black;
 }

@@ -1,12 +1,19 @@
 import { onSnake } from './snake.js'
-import { food } from './food.js'
+import { normalFood, badFood, goldFood } from './food.js'
 
 export let foodCounter = 0;
 export let scoreCounter = 0;
 
 export function update(){
-    if (onSnake(food)){
+    if (onSnake(normalFood)){
         foodCounter += 1;
+        scoreCounter += 10;
+    } else if (onSnake(badFood)) {
+        foodCounter = 0;
+        scoreCounter -= 15;
+    } else if (onSnake(goldFood)) {
+        foodCounter += 1;
+        scoreCounter += 50;
     }
 }
 
