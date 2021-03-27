@@ -1,13 +1,13 @@
-import { randomGridPos } from './grid.js'
 
 // ___Export Variables___
 export const SNAKE_SPEED = 9;
 
 // ___Variables___
 let newSegments = 0;
-const snakeBody = [
-    randomGridPos()
-]
+const snakeBody = [{
+    x: 11,
+    y: 11
+}]
 
 export function update(input) {
 

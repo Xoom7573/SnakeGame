@@ -28,18 +28,13 @@ body {
     border: .25vmin solid black;
 }
 
-.food {
-    background-color: brown;
-    border: .25vmin solid black;
-}
-
 .Normal-Food {
-    background-color: brown;
+    background-color: green;
     border: .25vmin solid black;
 }
 
 .Bad-Food {
-    background-color: green;
+    background-color: brown;
     border: .25vmin solid black;
 }
 
