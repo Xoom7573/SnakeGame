@@ -11,6 +11,8 @@ const snakeBody = [{
 
 export function update(input) {
 
+    if (input.x === 0 && input.y === 0) return;
+
     addSegments();
 
     for (let i = snakeBody.length - 2; i >= 0; i--){
