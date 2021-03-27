@@ -2,7 +2,7 @@
 
  >TODO
    - Options
-   - Speed increase by eating food
+   - Speed increase by eating food (after the snake eats 10 food)
    - Pauze + Pauze pop-up
    - Better game over pop-ups
    - 
