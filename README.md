@@ -1,5 +1,7 @@
 # SnakeGame
 
+![Logo](src/img/snakehead.png)
+
  >TODO
    - Options
    - Speed increase by eating food (after the snake eats 10 food)
