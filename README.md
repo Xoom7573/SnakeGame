@@ -7,16 +7,15 @@
    - Snake Head image as the head of the snake
 
  >Progress
-   - Score (add defferent apples score Ex:[ yellow: -10, red: +20, gold: *2])
-   - Food counter (score and food counter are the same atm.)
+   - Score GOLD, BAD AND NORMAL FOOD!
    - 
    
  >Bugs
-   - Pauze not working when snake is longer then '2'
    - 
 
  >Done
    - Pauzing the game by pressing spacebar!
+   - Food and score counter done :), go play!
 
  >SCREENSHOT OF THE GAME!
 

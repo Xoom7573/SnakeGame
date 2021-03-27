@@ -1,4 +1,4 @@
-
+import { snakHeadRotation } from './input.js'
 // ___Export Variables___
 export const SNAKE_SPEED = 9;
 
@@ -24,13 +24,30 @@ export function update(input) {
 }
 
 export function draw(gameDisplay) {
-    snakeBody.forEach(segment => {
-        const snakeElement = document.createElement('div')
-        snakeElement.style.gridRowStart = segment.y;
-        snakeElement.style.gridColumnStart = segment.x;
-        snakeElement.classList.add('snake')
-        gameDisplay.appendChild(snakeElement)
-    })
+    for(let i = 0; i < snakeBody.length; i++){
+        if(false){
+            let snakeElement = document.createElement('div');
+            snakeElement.style.gridColumnStart = snakeBody[i].x;
+            snakeElement.style.gridRowStart = snakeBody[i].y;
+            snakeElement.style.backgroundColor = 'blue';
+            snakeElement.classList.add('snake');
+            gameDisplay.appendChild(snakeElement);
+        }else if(i === 0){
+            let snakeElement = document.createElement('img');
+            snakeElement.style.transform = 'rotate(' + snakHeadRotation + 'deg)';
+            snakeElement.style.gridColumnStart = snakeBody[i].x;
+            snakeElement.style.gridRowStart = snakeBody[i].y;
+            snakeElement.src = './img/snakehead.png';
+            snakeElement.classList.add('snakehead');
+            gameDisplay.appendChild(snakeElement);
+        }else{
+            let snakeElement = document.createElement('div');
+            snakeElement.style.gridColumnStart = snakeBody[i].x;
+            snakeElement.style.gridRowStart = snakeBody[i].y;
+            snakeElement.classList.add('snake');
+            gameDisplay.appendChild(snakeElement);
+        }
+    }
 }
 
 export function expandSnake(amount) {

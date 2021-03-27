@@ -23,8 +23,15 @@ body {
     border: .25vmin solid black;
 }
 
+.snakehead {
+    border: .25vmin solid black;
+    object-fit: cover;
+    width: 89%;
+    height: 89%;
+}
+
 .snake {
-    background-color: blue;
+    background-color: darkblue;
     border: .25vmin solid black;
 }
 
