@@ -12,5 +12,5 @@
    - 
 
  >Done
-   - Pauzings
+   - Pauzing the game by pressing spacebar!
 
