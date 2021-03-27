@@ -8,18 +8,19 @@ body {
     background-color: grey;
 }
 
-.score {
-    color: aliceblue;
+.gameStatus {
+    color: black;
     margin-right: 35px;
 }
 
 #game-display {
     background-color: #ccc;
-    width: 100vmin;
-    height: 100vmin;
+    width: 90vmin;
+    height: 90vmin;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
+    border: .25vmin solid black;
 }
 
 .snake {
@@ -28,6 +29,21 @@ body {
 }
 
 .food {
+    background-color: brown;
+    border: .25vmin solid black;
+}
+
+.Normal-Food {
+    background-color: brown;
+    border: .25vmin solid black;
+}
+
+.Normal-Food {
+    background-color: brown;
+    border: .25vmin solid black;
+}
+
+.Normal-Food {
     background-color: brown;
     border: .25vmin solid black;
 }

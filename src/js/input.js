@@ -4,6 +4,22 @@ let lastInputDirection = { x: 0, y: 0 };
 window.addEventListener('keydown', e => {
     console.log(e.key);
     switch (e.key) {
+        case 'z':
+            if (lastInputDirection.y !== 0) break;
+            inputDirection = { x: 0, y: -1 };
+            break;
+        case 's':
+            if (lastInputDirection.y !== 0) break;
+            inputDirection = { x: 0, y: 1 };
+            break;
+        case 'q':
+            if (lastInputDirection.x !== 0) break;
+            inputDirection = { x: -1, y: 0 };
+            break;
+        case 'd':
+            if (lastInputDirection.x !== 0) break;
+            inputDirection = { x: 1, y: 0 };
+            break;
         case 'ArrowUp':
             if (lastInputDirection.y !== 0) break;
             inputDirection = { x: 0, y: -1 };

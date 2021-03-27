@@ -1,15 +1,19 @@
 import { onSnake } from './snake.js'
 import { food } from './food.js'
 
-let scoreCounter = 0;
+export let foodCounter = 0;
+export let scoreCounter = 0;
 
 export function update(){
     if (onSnake(food)){
-        scoreCounter += 1;
+        foodCounter += 1;
     }
 }
 
 export function draw(){
     const scoreElement = document.getElementById('score');
     scoreElement.innerHTML = 'Score: ' + scoreCounter;
+
+    const foodElement = document.getElementById('foodAmount');
+    foodElement.innerHTML = 'Food: ' + foodCounter;
 }
