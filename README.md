@@ -1,7 +1,7 @@
 # SnakeGame
 
  >TODO
-    - Scoreboard
+    - Score
     - Options
     - Food counter
     - Speed increase by eating food

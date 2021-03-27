@@ -1,8 +1,9 @@
 import {onSnake, expandSnake} from './snake.js'
 import { randomGridPos } from './grid.js'
 
-let food = getRandomFoodPos();
+export let food = getRandomFoodPos();
 const EXPANSION_RATE = 1;
+
 
 export function update() {
     if (onSnake(food)) {
