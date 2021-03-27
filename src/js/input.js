@@ -2,6 +2,7 @@ let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 
 window.addEventListener('keydown', e => {
+    console.log(e.key);
     switch (e.key) {
         case 'ArrowUp':
             if (lastInputDirection.y !== 0) break;
@@ -18,6 +19,9 @@ window.addEventListener('keydown', e => {
         case 'ArrowRight':
             if (lastInputDirection.x !== 0) break;
             inputDirection = { x: 1, y: 0 };
+            break;
+        case ' ':
+            inputDirection = { x: 0, y: 0 };
             break;
     }
 })

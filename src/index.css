@@ -8,6 +8,11 @@ body {
     background-color: grey;
 }
 
+.score {
+    color: aliceblue;
+    margin-right: 35px;
+}
+
 #game-display {
     background-color: #ccc;
     width: 100vmin;
