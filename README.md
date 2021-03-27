@@ -10,6 +10,7 @@
  >Progress
    - Score
    - Food counter (score and food counter are the same atm.)
+   - 
 
  >Done
    - 
