@@ -28,32 +28,25 @@ export function update() {
     }
 }
 
-// export function draw(gameDisplay) {
-//     const foodElement = document.createElement('div')
-//     foodElement.style.gridRowStart = food.y;
-//     foodElement.style.gridColumnStart = food.x;
-//     foodElement.classList.add('food')
-//     gameDisplay.appendChild(foodElement)
-// }
-
 export function draw(gameDisplay) {
     switch (foodCheck) {
         case 0:
             drawNormalFood(gameDisplay);
-            if (foodCounter < 5) foodCheck = 1;
+            if(foodCounter > 5) foodCheck = 1;
+
             break;
         case 1:
             drawNormalFood(gameDisplay);
             drawBadFood(gameDisplay);
-            if (foodCounter < 10) foodCheck = 2;
+            if (foodCounter > 10) foodCheck = 2;
             break;
         case 2:
             drawBadFood(gameDisplay);
             drawNormalFood(gameDisplay);
             drawGoldFood(gameDisplay);
-            if (foodCounter === 12) foodCheck = 1;
+            if (foodCounter > 12) foodCheck = 0;
             break;
-    }   
+    }  
 }
 
 function drawNormalFood(gameDisplay) {
@@ -81,7 +74,7 @@ function drawGoldFood(gameDisplay) {
 }
 
 function getRandomFoodPos() {
-    let newFoodPostion
+    let newFoodPostion;
     while(newFoodPostion == null || onSnake(newFoodPostion)){
         newFoodPostion = randomGridPos();
     }
