@@ -1,7 +1,9 @@
 # SnakeGame
 
+ >IDEA'S
+   - Options (settings u can setup before starting!)
+
  >TODO
-   - Options
    - Speed increase by eating food (after the snake eats 10 food)
    - Better game over pop-ups + Pauze pop-up + etc...
 
