@@ -15,4 +15,5 @@
    - Pauzing the game by pressing spacebar!
 
  > SCREENSHOT OF THE GAME!
-![screenshot](src/img/screenshot.png)
+
+ ![screenshot](src/img/screenshot.png)
