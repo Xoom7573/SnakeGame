@@ -11,11 +11,8 @@
    - Food counter (score and food counter are the same atm.)
    - 
 
- >Bugs
-   - Pauze not working when snake is longer then '2'
-   - 
  >Done
    - Pauzing the game by pressing spacebar!
 
- >SCREENSHOT OF THE GAME!
+ > SCREENSHOT OF THE GAME!
 ![screenshot](src/img/screenshot.png)
