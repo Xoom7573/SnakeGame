@@ -1,17 +1,16 @@
 # SnakeGame
 
  >TODO
-    - Score
-    - Options
-    - Food counter
-    - Speed increase by eating food
-    - Pauze + Pauze pop-up
-    - Better game over pop-ups
-    - 
+   - Options
+   - Speed increase by eating food
+   - Pauze + Pauze pop-up
+   - Better game over pop-ups
+   - 
 
  >Progress
-    -  
+   - Score
+   - Food counter (score and food counter are the same atm.)
 
  >Done
-    -
+   - 
 
