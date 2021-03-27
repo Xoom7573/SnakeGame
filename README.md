@@ -3,15 +3,14 @@
  >TODO
    - Options
    - Speed increase by eating food (after the snake eats 10 food)
-   - Pauze + Pauze pop-up
-   - Better game over pop-ups
+   - Better game over pop-ups + Pauze pop-up + etc...
    - 
 
  >Progress
-   - Score
+   - Score (add defferent apples score Ex:[ yellow: -10, red: +20, gold: *2])
    - Food counter (score and food counter are the same atm.)
    - 
 
  >Done
-   - 
+   - Pauzings
 
