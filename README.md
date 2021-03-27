@@ -14,3 +14,4 @@
  >Done
    - Pauzing the game by pressing spacebar!
 
+![Logo](src/img/snakehead.png) ![screenshot](src/img/screenshot.png)
