@@ -37,7 +37,8 @@ export function draw(gameDisplay) {
         case 1:
             drawNormalFood(gameDisplay);
             drawBadFood(gameDisplay);
-            if (foodCounter >= 10) foodCheck = 2;
+            if (foodCounter === 10) foodCheck = 2;
+            if (foodCounter < 5) foodCheck = 0;
             break;
         case 2:
             drawBadFood(gameDisplay);
