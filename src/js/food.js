@@ -18,10 +18,10 @@ export function update() {
         expandSnake(EXPANSION_RATE_NORMAL_FOOD);
         normalFood = getRandomFoodPos();
         badFood = getRandomFoodPos();
-    } else if (onSnake(badFood)){
+    } else if (onSnake(badFood) && foodCheck >= 1){
         expandSnake(EXPANSION_RATE_BAD_FOOD);
         badFood = getRandomFoodPos();
-    } else if (onSnake(goldFood)){
+    } else if (onSnake(goldFood) && foodCheck === 2){
         expandSnake(EXPANSION_RATE_GOLD_FOOD);
         goldFood = getRandomFoodPos();
         badFood = getRandomFoodPos();
@@ -32,21 +32,21 @@ export function draw(gameDisplay) {
     switch (foodCheck) {
         case 0:
             drawNormalFood(gameDisplay);
-            if(foodCounter > 5) foodCheck = 1;
-
+            if(foodCounter === 5) foodCheck = 1;
             break;
         case 1:
             drawNormalFood(gameDisplay);
             drawBadFood(gameDisplay);
-            if (foodCounter > 10) foodCheck = 2;
+            if (foodCounter >= 10) foodCheck = 2;
             break;
         case 2:
             drawBadFood(gameDisplay);
             drawNormalFood(gameDisplay);
             drawGoldFood(gameDisplay);
-            if (foodCounter > 12) foodCheck = 0;
+            if (foodCounter > 12) foodCheck = 1;
             break;
     }  
+    console.log('food: ' + foodCounter + ' foodCheck: ' + foodCheck)
 }
 
 function drawNormalFood(gameDisplay) {
