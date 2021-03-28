@@ -25,14 +25,7 @@ export function update(input) {
 
 export function draw(gameDisplay) {
     for(let i = 0; i < snakeBody.length; i++){
-        if(false){
-            let snakeElement = document.createElement('div');
-            snakeElement.style.gridColumnStart = snakeBody[i].x;
-            snakeElement.style.gridRowStart = snakeBody[i].y;
-            snakeElement.style.backgroundColor = 'blue';
-            snakeElement.classList.add('snake');
-            gameDisplay.appendChild(snakeElement);
-        }else if(i === 0){
+        if(i === 0){
             let snakeElement = document.createElement('img');
             snakeElement.style.transform = 'rotate(' + snakHeadRotation + 'deg)';
             snakeElement.style.gridColumnStart = snakeBody[i].x;
@@ -79,3 +72,4 @@ function addSegments() {
     }
     newSegments = 0;
 }
+

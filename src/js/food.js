@@ -47,7 +47,7 @@ export function draw(gameDisplay) {
             if (foodCounter > 12) foodCheck = 1;
             break;
     }  
-    console.log('food: ' + foodCounter + ' foodCheck: ' + foodCheck)
+    // console.log('food: ' + foodCounter + ' foodCheck: ' + foodCheck) // DEBUGGING!
 }
 
 function drawNormalFood(gameDisplay) {

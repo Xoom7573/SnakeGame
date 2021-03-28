@@ -4,11 +4,11 @@
    - Options (settings u can setup before starting!)
 
  >TODO
-   - Speed increase by eating food (after the snake eats 10 food)
    - Better game over pop-ups + Pauze pop-up + etc...
+   - 
 
  >Progress
-   - 
+   - Speed increase by eating food [errors with references!]
    
  >Bugs
    - Still some glitches with the food!
