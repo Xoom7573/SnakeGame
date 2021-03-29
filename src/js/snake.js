@@ -1,6 +1,6 @@
 import { snakHeadRotation } from './input.js'
 // ___Export Variables___
-export const SNAKE_SPEED = 9;
+export var SNAKE_SPEED = 9;
 
 // ___Variables___
 let newSegments = 0;

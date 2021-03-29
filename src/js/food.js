@@ -1,6 +1,7 @@
-import {onSnake, expandSnake} from './snake.js'
+import {onSnake, expandSnake, SNAKE_SPEED} from './snake.js'
 import { randomGridPos } from './grid.js'
-import { foodCounter, scoreCounter } from './score.js'
+import { foodCounter } from './score.js'
+
 
 export let normalFood = getRandomFoodPos();
 export let badFood = getRandomFoodPos();
