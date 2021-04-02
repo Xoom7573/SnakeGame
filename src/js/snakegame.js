@@ -15,7 +15,7 @@ function main (currentTime) {
 
     if (gameOver){
         if (confirm('You lost. Press ok to restart.')){
-            window.location = '/SnakeGame'
+            window.location = 'https://xoom7573.github.io/SnakeGame/'
         }
         return
     }
