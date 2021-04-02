@@ -8,15 +8,46 @@ body {
     background-image: linear-gradient(to bottom right, #2E21AC, #E44D9E);
 }
 
+.titleName {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
 .gameStatus {
-    color: black;
+    color: white;
     margin-right: 35px;
 }
 
 #game-display {
     background-color: white;
     width: 90vmin;
-    height: 90vmin;
+    height: 85vmin;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
@@ -26,8 +57,8 @@ body {
 .snakehead {
     border: 1px solid black;
     object-fit: cover;
-    width: 97%;
-    height: 97%;
+    width: 96%;
+    height: 95%;
 }
 
 .snake {
