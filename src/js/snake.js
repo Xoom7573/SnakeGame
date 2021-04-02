@@ -30,7 +30,7 @@ export function draw(gameDisplay) {
             snakeElement.style.transform = 'rotate(' + snakHeadRotation + 'deg)';
             snakeElement.style.gridColumnStart = snakeBody[i].x;
             snakeElement.style.gridRowStart = snakeBody[i].y;
-            snakeElement.src = './img/snakehead.png';
+            snakeElement.src = './src/img/snakehead.png';
             snakeElement.classList.add('snakehead');
             gameDisplay.appendChild(snakeElement);
         }else{
